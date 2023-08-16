@@ -1,0 +1,93 @@
+.Calendar {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+.CalendarGrid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.CalendarCell {
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: orange;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+.DayName {
+  font-weight: bold;
+  color: gainsboro;
+}
+
+.DateNumber {
+  font-weight: bold;
+  margin-top: 5px;
+  color: gainsboro;
+}
+
+.buttons {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.buttons h1 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.workButton {
+  background-color: blue;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border: 3px solid black;
+  border-radius: 10px;
+  height: 200px;
+  width: 400px;
+  margin-right: 20px;
+  font-weight: bold;
+  color: gainsboro;
+  font-size: 30px;
+}
+.holidayButton {
+  background-color: yellow;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border: 3px solid black;
+  border-radius: 10px;
+  height: 200px;
+  width: 400px;
+  margin-right: 20px;
+  color: gainsboro;
+  font-size: 30px;
+  /* active */
+  /* background-color: yellow;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px); */
+}
+.errandsButton {
+  background-color: green;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border: 3px solid black;
+  border-radius: 10px;
+  height: 200px;
+  width: 400px;
+  margin-right: 20px;
+  color: gainsboro;
+  font-size: 30px;
+}
+.sickButton {
+  background-color: red;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border: 3px solid black;
+  border-radius: 10px;
+  height: 200px;
+  width: 400px;
+  color: gainsboro;
+  font-size: 30px;
+}

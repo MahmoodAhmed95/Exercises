@@ -1,0 +1,464 @@
+/*
+### Colors
+Green: #20c063 / RGBA(32,192,99,1)
+Gray: #e8e9ea  / RGBA (232,233,234,1)
+Dark Text: #3b4144 / RGBA (59,65,68,1)
+*/
+
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 14px;
+  line-height: 1.4;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/*
+   * Remove text-shadow in selection highlight:
+   * https://twitter.com/miketaylr/status/12228805301
+   *
+   * Vendor-prefixed and regular ::selection selectors cannot be combined:
+   * https://stackoverflow.com/a/16982510/7133471
+   *
+   * Customize the background color to match your design.
+   */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+   * A better looking default horizontal rule
+   */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+   * Remove the gap between audio, canvas, iframes,
+   * images, videos and the bottom of their containers:
+   * https://github.com/h5bp/html5-boilerplate/issues/440
+   */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+   * Remove default fieldset styles.
+   */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+   * Allow only vertical resizing of textareas.
+   */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+     Browser Upgrade Prompt
+     ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+     Author's custom styles
+     ========================================================================== */
+
+p {
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: #3a8e52;
+}
+
+/* Navigation */
+.trulia-nav {
+  background-color: #32b64c;
+  color: white;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.trulia-nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.trulia-nav ul li {
+  display: inline-block;
+  margin: 0;
+}
+
+.trulia-nav svg {
+  height: 25px;
+  width: 78px;
+}
+
+.trulia-nav-left,
+.trulia-nav-right {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.trulia-nav-item,
+.trulia-nav-item:visited {
+  font-size: 14px;
+  padding: 0 12px;
+  display: block;
+  color: white;
+}
+
+.trulia-nav-toggle {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .trulia-nav {
+    height: auto;
+    display: block;
+  }
+
+  .trulia-nav-toggle {
+    display: block;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-right: 2rem;
+  }
+
+  .trulia-nav ul li {
+    display: inline-block;
+    margin: 0;
+  }
+
+  .trulia-nav-logo {
+    height: 25px;
+    width: 78px;
+    padding-left: 0;
+  }
+
+  .trulia-nav-left,
+  .trulia-nav-right {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .trulia-nav-left ul,
+  .trulia-nav-right ul {
+    width: 100%;
+    display: block;
+    margin: 0;
+  }
+
+  .trulia-nav-left ul li,
+  .trulia-nav-right ul li {
+    display: block;
+  }
+
+  .trulia-nav-item,
+  .trulia-nav-item:visited {
+    display: block;
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+  }
+
+  .trulia-nav-mobilehide {
+    height: 0;
+    overflow: hidden;
+    width: 0;
+  }
+}
+.table {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 97vw;
+  background-color: #ccc;
+  padding-left: 35px;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.text1 {
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+}
+.p {
+  margin-left: 10px;
+  font-weight: bold;
+}
+.column1 {
+  /* margin-left: 20px; */
+  align-items: center;
+  justify-content: center;
+}
+.column3 {
+  /* margin-right: 20px; */
+  align-items: center;
+  justify-content: center;
+}
+.image1 {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 31vh;
+  width: 31vw;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.image2 {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 31vh;
+  width: 31vw;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.image3 {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 31vh;
+  width: 31vw;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.image4 {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 31vh;
+  width: 31vw;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.image5 {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 31vh;
+  width: 31vw;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.image6 {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 31vh;
+  width: 31vw;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.image7 {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-7.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 31vh;
+  width: 31vw;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.image8 {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-8.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 31vh;
+  width: 31vw;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.image9 {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-09.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 31vh;
+  width: 31vw;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.image10 {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-10.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 31vh;
+  width: 31vw;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.image11 {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-11.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 31vh;
+  width: 31vw;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.image12 {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-12.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 31vh;
+  width: 31vw;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.insideImage {
+  width: 100vw;
+  background-color: #ffff;
+  display: grid;
+  grid-template-rows: 0.3fr 0.3fr;
+  padding-left: 10px;
+  border-radius: 0 0 5px 5px;
+}
+.ap {
+  margin: 0;
+}
+.ac {
+  color: darkgrey;
+  margin: 0;
+}
+h4 {
+  margin: 0;
+}
+.icon {
+  height: 15px;
+  width: 15px;
+}
+.footer {
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+}
+.pages {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tcolo {
+  margin-right: 5px;
+  margin-left: 5px;
+  color: #3a8e52;
+}
+.middle {
+  padding-left: 20px;
+  width: 70.5vw;
+  padding-top: 20px;
+}
+.last {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  background-color: slategray;
+  margin-top: 40px;
+}
+.ffoot {
+  display: flex;
+  color: #ffff;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.f {
+  margin-right: 10px;
+}
+.efoot {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  color: darkgrey;
+  font-size: small;
+}
+.rco {
+  color: darkgrey;
+}

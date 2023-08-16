@@ -1,0 +1,10 @@
+.movieCard {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1fr;
+  height: 50vh;
+}
+.movieHeader {
+  color: black;
+  background-color: white;
+}

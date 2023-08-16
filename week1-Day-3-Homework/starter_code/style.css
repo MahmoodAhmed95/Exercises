@@ -1,0 +1,201 @@
+body {
+  font-family: 'Nunito', Arial, sans-serif;
+  font-size: 12px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+/* Colors */
+/* Redish / Pink: #ff5358 */
+/* Dark red for button hover: #e00007 */
+/* Very light gray for backgrounds: #efefef */
+/* Very light gray for borders: #dbdbdb */
+/* Dark gray for footer: #0e0f0f */
+/* White for text and backgrounds: #FFFFFF */
+
+
+/* Background image links */
+/* Hero: https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/melbourne.jpg */
+/* Fitzroy: https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/fitzroy.jpg */
+/* St. Kilda: https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/st-kilda.jpg  */
+/* CBD: https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/central-business-district.jpg */
+ul {
+  display: flex;
+  justify-content: flex-end;
+  width: auto;
+  height: 3vh;
+  display: flex;
+  list-style-type: none;
+}
+.logo {
+  margin-right: auto;
+}
+.imagee {
+  width: 100%;
+  height: 30px;
+}
+.login {
+  font-size: large;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.mainpage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./melbourne.jpg');
+  background-size: cover;
+  height: 95vh;
+  background-repeat: no-repeat;
+}
+.mainpage > h1{
+  font-size: 8vh;
+  color: #FFFFFF;
+}
+.mainpage > p {
+  font-size: 2vh;
+  color: #FFFFFF;
+  text-align: center;
+}
+.btn {
+  width: 270px;
+  height: 50px;
+  background-color: #ff5358;
+  padding: 10px;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-size:2vh ;
+  cursor: grab;
+}
+/* full container for the boxes (background of them)*/
+.fullbox {
+  background-color: #f5f5f5; 
+  padding: 50px 0;
+}
+/* container of the two boxes */
+.boxesCont {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 30px;
+}
+/* control inside the boxes */
+.boxIn {
+  background-color: #FFFFFF; 
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  flex-basis: calc(50% - 5px);
+  margin-right: 10px;
+  margin-left: 10px;
+}
+/* margin in side the box */
+.marginIn {
+  margin-bottom: 15px;
+}
+/* control the title for the boxes */
+.boxTitle {
+  background-color: #efefef;
+  color: #0e0f0f; 
+  font-weight: bold;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+/* control the icon and the text inside the boxes */
+.boxSort {
+  display: flex;
+  align-items: center;
+  
+}
+
+/* full box for neighborhood section */
+.bottomPageBoxes {
+  background-color: #FFFFFF;
+  padding: 50px 0;
+}
+
+.bottomPageBoxes {
+  background-color: #FFFFFF;
+  padding: 10px;
+}
+
+.bottomBoxText {
+  text-align: center;
+}
+
+.bottomBoxText h2 {
+  font-size: xx-large;
+  color: #0e0f0f; 
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.bottomBoxText p {
+  font-size: medium;
+  color: #0e0f0f;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.imageBoxCont {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.imagesTextBox {
+  position: relative;
+  flex-basis: 33.33%;
+}
+
+.imagesTextBox img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.textInImageBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.textInImageBox h3,
+.textInImageBox p {
+  color: #FFFFFF; 
+  margin: 0;
+  text-align: center;
+}
+.imagesTextBox .half {
+  background-color: #efefef;
+  font-size: large;
+}
+.secondBtnCont {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  background-color: #0e0f0f;
+  color: #FFFFFF;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  
+}

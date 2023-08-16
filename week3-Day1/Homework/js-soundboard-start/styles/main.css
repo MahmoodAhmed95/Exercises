@@ -1,0 +1,16 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  height: 90vh;
+}
+div {
+  display: grid;
+  grid-template-rows: 0.2fr 1fr;
+  justify-content: center;
+  gap: 10px;
+}
+button {
+  height: 40px;
+  width: 80px;
+}

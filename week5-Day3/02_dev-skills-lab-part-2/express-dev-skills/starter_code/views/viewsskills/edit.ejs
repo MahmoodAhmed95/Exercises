@@ -1,0 +1,33 @@
+<!-- views/skills/show.ejs -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developer Skills</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h1>
+                <%= title %>
+            </h1>
+            <form action="/routesskills/update/<%= id %>?_method=PUT" method="POST">
+                <div>
+                    <label for="name">Skill Name:</label>
+                    <input type="text" name="editName" id="name" value="<%= skill.name  %>">
+                </div>
+                <div>
+                    <label for="type">Skill Type:</label>
+                    <input type="text" name="editType" id="type" value="<%= skill.type  %>">
+                </div>
+                <button type="submit">Edit Skill</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

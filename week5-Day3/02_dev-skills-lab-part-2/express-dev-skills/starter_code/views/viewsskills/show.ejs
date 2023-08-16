@@ -1,0 +1,31 @@
+<!-- views/skills/show.ejs -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Developer Skills</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>Developer Skill</h1>
+    <% if (skill) { %>
+      <h3>Name: <%= skill.name %>
+      </h3>
+      <h4>Type: <%= skill.type %>
+      </h4>
+      <!-- delete link -->
+      <a href="/routesskills/delete/<%= id%>">_Delete Skill_</a><br>
+      <!-- edit link -->
+      <a href="/routesskills/edit/<%=id%>">_Edit Skill_</a>
+
+      <% } else { %>
+        <p>Skill not found.</p>
+        <% } %>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+span {
+    color: blue;
+    text-decoration: underline;
+    list-style-type: decimal;
+}
+img {
+    float: right;
+    display: block;
+    margin: 0 auto;
+    padding-right: 80px;
+    position: relative;
+    top: -80px;
+    max-width: 400px;
+    height: auto;
+}
+h2{
+    border-top: 1px solid black;
+}
+.t1 {
+    background-color: black;
+    color: white;
+}
+td {
+    background-color:lightgray;
+}
