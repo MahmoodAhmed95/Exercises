@@ -1,9 +1,6 @@
 const mongoose = require('mongoose');
-
-// Ensure that the Category model is loaded in Mongoose
+// Ensure the Category model is processed by Mongoose (for populating Menu Item queries)
 require('./category');
-
-// We want to re-use the itemSchema
 const itemSchema = require('./itemSchema');
 
 module.exports = mongoose.model('Item', itemSchema);

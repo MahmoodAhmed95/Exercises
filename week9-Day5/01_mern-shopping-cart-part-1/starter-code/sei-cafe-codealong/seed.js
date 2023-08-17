@@ -4,9 +4,9 @@ require('./config/database');
 const Category = require('./models/category');
 const Item = require('./models/item');
 
-// Pattern:  IIFE
+// IIFE
+// Immediately Invoked Function Expression
 (async function() {
-
   await Category.deleteMany({});
   const categories = await Category.create([
     {name: 'Sandwiches', sortOrder: 10},

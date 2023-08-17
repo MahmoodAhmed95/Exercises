@@ -1,0 +1,19 @@
+/* You can style the NoteList component here */
+.NoteList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.NoteList__note {
+  padding: 8px;
+  background-color: var(--light-gray);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.NoteList__note.active {
+  background-color: var(--accent-color);
+  color: var(--white);
+}

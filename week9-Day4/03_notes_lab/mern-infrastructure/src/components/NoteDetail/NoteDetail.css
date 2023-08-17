@@ -1,0 +1,12 @@
+/* You can style the NoteDetail component here */
+.NoteDetail {
+  padding: 16px;
+  background-color: var(--light-gray);
+  border-radius: 8px;
+  margin: 8px;
+}
+
+.NoteDetail.empty {
+  font-style: italic;
+  color: var(--gray);
+}

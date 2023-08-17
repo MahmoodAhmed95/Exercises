@@ -1,11 +1,11 @@
-import React from 'react';
-import StockCard from './StockCard';
+import React from "react";
+import StockCard from "./StockCard";
 
-export default function StockContainer() {
+export default function StockContainer({ stocks }) {
   return (
     <div>
       <h2>Stocks</h2>
-      { /* render the list of stocks here using the StockCard component */ }
+      <StockCard stocks={stocks} />
     </div>
   );
 }

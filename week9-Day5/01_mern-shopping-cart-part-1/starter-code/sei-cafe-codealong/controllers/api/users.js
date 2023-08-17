@@ -36,7 +36,7 @@ async function login(req, res) {
 }
 
 
-/*-- Helper Functions --*/
+/* Helper Functions */
 
 function createJWT(user) {
   return jwt.sign(

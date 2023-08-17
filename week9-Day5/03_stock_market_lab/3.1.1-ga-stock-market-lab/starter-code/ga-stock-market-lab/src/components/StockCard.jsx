@@ -1,13 +1,18 @@
-import React from 'react'
-
-export default function StockCard() {
+import React from "react";
+export default function StockCard({ stocks }) {
   return (
-    <div className="card">
-      <div className="card-body">
-        <h5 className="card-title">{/* Company Name */}</h5>
-        <p className="card-text">{/* stock price */}</p>
-        { /* use a ternary to display a BUY or SELL button */}
-      </div>
-    </div>
+    <>
+      {stocks.map((stock) => (
+        <div className="card">
+          <div className="card-body">
+            <div key={stock.id}>
+              <h5 className="card-title">{stock.name}</h5>
+              <p className="card-text">${stock.price}</p>
+              {<button className="buyBtn">BUY</button>}
+            </div>
+          </div>
+        </div>
+      ))}
+    </>
   );
 }
