@@ -142,4 +142,92 @@
 # 	```
 # 	Congrats to player X for winning 2 games!
 # 	```
+# Global variables
+game_board = {}
+current_turn = 'X'
+player_wins = {'X': 0, 'O': 0, 'ties': 0}
+
+def initialize_game():
+    global game_board, current_turn
+    game_board = {
+        'a1': None, 'b1': None, 'c1': None,
+        'a2': None, 'b2': None, 'c2': None,
+        'a3': None, 'b3': None, 'c3': None
+    }
+    current_turn = 'X'
+
+def display_board():
+    print("\n    A   B   C\n")
+    print("1)  {} | {} | {} ".format(game_board['a1'] or ' ', game_board['b1'] or ' ', game_board['c1'] or ' '))
+    print("   -----------")
+    print("2)  {} | {} | {} ".format(game_board['a2'] or ' ', game_board['b2'] or ' ', game_board['c2'] or ' '))
+    print("   -----------")
+    print("3)  {} | {} | {} ".format(game_board['a3'] or ' ', game_board['b3'] or ' ', game_board['c3'] or ' '))
+    print()
+
+def get_player_move():
+    while True:
+        move = input("Player {}'s Move (example B2): ".format(current_turn)).lower()
+        if len(move) == 2 and move[0] in 'abc' and move[1] in '123':
+            if game_board[move] is None:
+                return move
+            else:
+                print("That cell is already occupied! Try again...")
+        else:
+            print("Invalid move format! Try again...")
+
+def update_game_board(move):
+    game_board[move] = current_turn
+
+def check_winner():
+    winning_combinations = [
+        ['a1', 'a2', 'a3'], ['b1', 'b2', 'b3'], ['c1', 'c2', 'c3'],
+        ['a1', 'b1', 'c1'], ['a2', 'b2', 'c2'], ['a3', 'b3', 'c3'],
+        ['a1', 'b2', 'c3'], ['a3', 'b2', 'c1']
+    ]
+    for combination in winning_combinations:
+        if game_board[combination[0]] == game_board[combination[1]] == game_board[combination[2]] is not None:
+            return game_board[combination[0]]
+    if all(game_board[cell] is not None for cell in game_board):
+        return 'tie'
+    return None
+
+def display_score():
+    print("\nSCORE:")
+    print("Player X: {}   Player O: {}   Ties: {}\n".format(player_wins['X'], player_wins['O'], player_wins['ties']))
+
+def play_game():
+    global current_turn
+    while check_winner() is None:
+        display_board()
+        move = get_player_move()
+        update_game_board(move)
+        current_turn = 'O' if current_turn == 'X' else 'X'
+    display_board()
+    winner = check_winner()
+    if winner == 'tie':
+        print("Another tie!")
+        player_wins['ties'] += 1
+    else:
+        print("Player {} wins the game!".format(winner))
+        player_wins[winner] += 1
+    display_score()
+
+def play_custom_tic_tac_toe(wins_to_play):
+    global player_wins
+    print("----------------------")
+    print("Let's play Custom Tic-Tac-Toe!")
+    print("----------------------\n")
+    player_wins = {'X': 0, 'O': 0, 'ties': 0}
+    print("Play to {} wins!\n".format(wins_to_play))
+    while player_wins['X'] < wins_to_play and player_wins['O'] < wins_to_play:
+        initialize_game()
+        play_game()
+    if player_wins['X'] >= wins_to_play:
+        print("Congrats to player X for winning {} games!".format(wins_to_play))
+    else:
+        print("Congrats to player O for winning {} games!".format(wins_to_play))
+
+play_to = int(input("Enter the number of wins to play to: "))
+play_custom_tic_tac_toe(play_to)
 
