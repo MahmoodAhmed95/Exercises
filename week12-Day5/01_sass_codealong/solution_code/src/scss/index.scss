@@ -1,0 +1,32 @@
+
+@import './variables';
+@import '~bootstrap/scss/bootstrap';
+@import './components';
+@import './pages';
+
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+  .homeOuter{
+    background-image: url('../images/irena-carpaccio-Rb0npTjQQAw-unsplash.jpg');
+    background-size: cover;
+    min-height: 100vh;
+    color: white;
+  }
+  
+  .homeOuter .col > *:first-child {
+    margin-top: 4rem;
+  }
+  
+  .breadcrumb {
+    margin-top: 2rem;
+  }

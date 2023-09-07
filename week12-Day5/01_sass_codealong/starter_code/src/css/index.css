@@ -1,0 +1,31 @@
+
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+  .homeOuter{
+    background-image: url('../images/irena-carpaccio-Rb0npTjQQAw-unsplash.jpg');
+    background-size: cover;
+    min-height: 100vh;
+    color: white;
+  }
+  
+  .homeOuter .col > *:first-child {
+    margin-top: 4rem;
+  }
+  
+  .breadcrumb {
+    margin-top: 2rem;
+  }
